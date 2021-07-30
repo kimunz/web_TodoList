@@ -1,0 +1,126 @@
+:root{
+    /* Color */
+    --white-color: #d4d4d4;
+    --black-color: #140a00;
+    --purple-light-color: #c7bcd1;
+    --purple-dark-color: #6f5e75;
+    --grey-dark-color: #909090;
+    --grey-light-color: #e0e0e0;
+
+    /* Size */
+    --spacing-large: 18px;
+    --spacing: 12px;
+    --spacing-medium: 8px;
+    --spacing-small: 6px;
+
+    /* Font Size */
+    --font-xlarge: 50px;
+    --font-large: 30px;
+    --font-regular: 25px;
+    --font-medium: 18px;
+    --font-small: 12px;
+    --font-micro: 10px;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--purple-light-color);
+    font-family: 'Nanum Gothic', serif;
+}
+
+a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+ul {
+    list-style: none;
+}
+
+/* ----------------------------------------------------- */
+
+header{
+    display: flex;
+}
+
+header .logo{
+    width: 100%;
+    margin: var(--spacing);
+    font-size: var(--font-xlarge);
+    text-align: center;
+    font-family: 'Song Myung', serif;
+}
+
+.today-date{
+    margin-top: 30px;
+    text-align: center;
+    font-size: var(--font-regular);
+    font-family: 'Song Myung', serif;
+}
+
+.add-list{
+    display: flex;
+    width: 100%;
+    margin: 20px auto;
+    justify-content: center;
+}
+
+.add-list .input-box{
+    width: 350px;
+    height: 40px;
+    font-size: var(--font-medium);
+    padding-left: var(--spacing);
+    border: 1px solid gray;
+}
+
+.add-list .add-btn{
+    color: var(--black-color);
+    border: 1px solid gray;
+    width: 50px;
+    height: 40px;
+    margin-left: var(--spacing);
+}
+
+.todo-list{
+    width: 100%;
+}
+
+.todo-list ul{
+    width: 390px;
+    font-size: var(--font-medium);
+    margin: var(--spacing-small) auto;
+}
+
+.todo-list ul li {
+    display: flex;
+    background: var(--purple-dark-color);
+    color: var(--white-color);
+    margin-top: var(--spacing-medium);
+}
+
+.todo-list ul li input[type="checkbox"]{
+    width: 25px;
+    height: 25px;
+    margin: auto var(--spacing);
+}
+
+.todo-list ul li input[type="checkbox"] + label{
+    margin: auto 0;
+    width: 100%;
+}
+
+.todo-list ul li input[type="checkbox"] + label.done{
+    text-decoration: line-through;
+}
+
+.todo-list ul li .list-delete i{
+    margin: auto 0;
+    padding: var(--spacing);
+    font-size: var(--font-medium);
+    cursor: pointer;
+}

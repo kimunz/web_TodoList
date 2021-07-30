@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoHaZi</title>
+
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Song+Myung&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b68de622cb.js" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</head>
+<body>
+    <template>
+        <li>
+            <input class="checkBox" type="checkbox"><label></label>
+            <div class="list-delete">
+                <i class="far fa-trash-alt"></i>
+            </div>
+        </li>
+    </template>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <a href="#">모하지</a>
+        </div>
+    </header>
+
+    <!-- Today Date -->
+    <div class="today-date">
+        <span></span>
+    </div>
+    
+    <!-- Add List -->
+    <div class="add-list">
+        <input type="text" class="input-box" autofocus>
+        <button class="add-btn">ADD</button>
+    </div>
+    
+    <!-- Todo List -->
+    <div class="todo-list">
+        <ul>
+            <li>
+                <input class="checkBox" type="checkbox"><label>아침밥 챙겨먹기</label>
+                <div class="list-delete">
+                    <i class="far fa-trash-alt"></i>
+                </div>
+            </li>
+            <li>
+                <input class="checkBox" type="checkbox"><label>고객센터 상담받기</label>
+                <div class="list-delete">
+                    <i class="far fa-trash-alt"></i>
+                </div>
+            </li>
+            <li>
+                <input class="checkBox" type="checkbox" checked><label class="done">2:00pm 친구와 약속</label>
+                <div class="list-delete">
+                    <i class="far fa-trash-alt"></i>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
